@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="now">Now</string>
+    <string name="today">Today</string>
+    <string name="feels">Feels like %1$s</string>
+    <string name="hi_lo">H: %1$s  L: %2$s</string>
+    <string name="hourly">Hourly forecast</string>
+    <string name="daily">10-day forecast</string>
+    <string name="nowcast">Precipitation, next 2 hours</string>
+    <string name="rain_none">No precipitation expected</string>
+    <string name="rain_start">Precipitation starts in %1$d min</string>
+    <string name="rain_stop">Precipitation ends in %1$d min</string>
+    <string name="rain_long">Precipitation continues for 2+ hours</string>
+    <string name="air">Air quality</string>
+    <string name="aqi_line">EU AQI · US AQI %1$d</string>
+    <string name="aq0">Good</string>
+    <string name="aq1">Fair</string>
+    <string name="aq2">Moderate</string>
+    <string name="aq3">Poor</string>
+    <string name="aq4">Very poor</string>
+    <string name="aq5">Extremely poor</string>
+    <string name="pollen">Pollen</string>
+    <string name="pl_alder">Alder</string>
+    <string name="pl_birch">Birch</string>
+    <string name="pl_grass">Grass</string>
+    <string name="pl_mugwort">Mugwort</string>
+    <string name="pl_olive">Olive</string>
+    <string name="pl_ragweed">Ragweed</string>
+    <string name="pollen_unit">grains/m³</string>
+    <string name="t_wind">Wind</string>
+    <string name="t_hum">Humidity</string>
+    <string name="t_press">Pressure</string>
+    <string name="t_uv">UV index</string>
+    <string name="t_vis">Visibility</string>
+    <string name="t_cloud">Cloud cover</string>
+    <string name="t_precip">Precipitation</string>
+    <string name="t_day">Daylight</string>
+    <string name="gusts">Gusts %1$s</string>
+    <string name="dew">Dew point %1$s</string>
+    <string name="chance">Chance %1$d%%</string>
+    <string name="today_sum">Today</string>
+    <string name="sunset_at">Sunset %1$s</string>
+    <string name="hm">%1$d h %2$d min</string>
+    <string name="lv0">Low</string>
+    <string name="lv1">Moderate</string>
+    <string name="lv2">High</string>
+    <string name="lv3">Very high</string>
+    <string name="lv4">Extreme</string>
+    <string name="sun_moon">Sun &amp; Moon</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="moon_ill">Illumination %1$d%%</string>
+    <string-array name="moon_phases">
+        <item>New moon</item>
+        <item>Waxing crescent</item>
+        <item>First quarter</item>
+        <item>Waxing gibbous</item>
+        <item>Full moon</item>
+        <item>Waning gibbous</item>
+        <item>Last quarter</item>
+        <item>Waning crescent</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>N</item><item>NE</item><item>E</item><item>SE</item>
+        <item>S</item><item>SW</item><item>W</item><item>NW</item>
+    </string-array>
+    <string name="u_kmh">km/h</string>
+    <string name="u_ms">m/s</string>
+    <string name="u_mph">mph</string>
+    <string name="u_hpa">hPa</string>
+    <string name="u_mmhg">mmHg</string>
+    <string name="u_inhg">inHg</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="u_in">in</string>
+    <string name="places">Places</string>
+    <string name="search_hint">Search city…</string>
+    <string name="my_loc">My location</string>
+    <string name="remove_hint">Long-press a saved place to remove it</string>
+    <string name="no_results">Nothing found</string>
+    <string name="err_net">No connection</string>
+    <string name="err_loc">Can\'t get location</string>
+    <string name="units_title">Units</string>
+    <string name="updated">Updated %1$s</string>
+    <string name="attribution">Weather data: Open-Meteo.com</string>
+    <string name="c_clear">Clear</string>
+    <string name="c_mostly_clear">Mostly clear</string>
+    <string name="c_partly">Partly cloudy</string>
+    <string name="c_overcast">Overcast</string>
+    <string name="c_fog">Fog</string>
+    <string name="c_drizzle">Drizzle</string>
+    <string name="c_fdrizzle">Freezing drizzle</string>
+    <string name="c_lrain">Light rain</string>
+    <string name="c_rain">Rain</string>
+    <string name="c_hrain">Heavy rain</string>
+    <string name="c_frain">Freezing rain</string>
+    <string name="c_lsnow">Light snow</string>
+    <string name="c_snow">Snow</string>
+    <string name="c_hsnow">Heavy snow</string>
+    <string name="c_grains">Snow grains</string>
+    <string name="c_showers">Rain showers</string>
+    <string name="c_hshowers">Heavy showers</string>
+    <string name="c_snowshowers">Snow showers</string>
+    <string name="c_thunder">Thunderstorm</string>
+    <string name="c_thunder_hail">Thunderstorm with hail</string>
+</resources>

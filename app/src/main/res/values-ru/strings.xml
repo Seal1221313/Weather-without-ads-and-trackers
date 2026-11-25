@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="now">Сейчас</string>
+    <string name="today">Сегодня</string>
+    <string name="feels">Ощущается как %1$s</string>
+    <string name="hi_lo">Макс: %1$s  Мин: %2$s</string>
+    <string name="hourly">Почасовой прогноз</string>
+    <string name="daily">Прогноз на 10 дней</string>
+    <string name="nowcast">Осадки, ближайшие 2 часа</string>
+    <string name="rain_none">Осадков не ожидается</string>
+    <string name="rain_start">Осадки начнутся через %1$d мин</string>
+    <string name="rain_stop">Осадки закончатся через %1$d мин</string>
+    <string name="rain_long">Осадки продлятся более 2 часов</string>
+    <string name="air">Качество воздуха</string>
+    <string name="aqi_line">EU AQI · US AQI %1$d</string>
+    <string name="aq0">Хорошее</string>
+    <string name="aq1">Приемлемое</string>
+    <string name="aq2">Умеренное</string>
+    <string name="aq3">Плохое</string>
+    <string name="aq4">Очень плохое</string>
+    <string name="aq5">Опасное</string>
+    <string name="pollen">Пыльца</string>
+    <string name="pl_alder">Ольха</string>
+    <string name="pl_birch">Берёза</string>
+    <string name="pl_grass">Злаки</string>
+    <string name="pl_mugwort">Полынь</string>
+    <string name="pl_olive">Олива</string>
+    <string name="pl_ragweed">Амброзия</string>
+    <string name="pollen_unit">зёрен/м³</string>
+    <string name="t_wind">Ветер</string>
+    <string name="t_hum">Влажность</string>
+    <string name="t_press">Давление</string>
+    <string name="t_uv">УФ-индекс</string>
+    <string name="t_vis">Видимость</string>
+    <string name="t_cloud">Облачность</string>
+    <string name="t_precip">Осадки</string>
+    <string name="t_day">Световой день</string>
+    <string name="gusts">Порывы %1$s</string>
+    <string name="dew">Точка росы %1$s</string>
+    <string name="chance">Вероятность %1$d%%</string>
+    <string name="today_sum">Сегодня</string>
+    <string name="sunset_at">Закат %1$s</string>
+    <string name="hm">%1$d ч %2$d мин</string>
+    <string name="lv0">Низкий</string>
+    <string name="lv1">Умеренный</string>
+    <string name="lv2">Высокий</string>
+    <string name="lv3">Очень высокий</string>
+    <string name="lv4">Экстремальный</string>
+    <string name="sun_moon">Солнце и Луна</string>
+    <string name="sunrise">Восход</string>
+    <string name="sunset">Закат</string>
+    <string name="moon_ill">Освещённость %1$d%%</string>
+    <string-array name="moon_phases">
+        <item>Новолуние</item>
+        <item>Молодой серп</item>
+        <item>Первая четверть</item>
+        <item>Растущая Луна</item>
+        <item>Полнолуние</item>
+        <item>Убывающая Луна</item>
+        <item>Последняя четверть</item>
+        <item>Старый серп</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>С</item><item>СВ</item><item>В</item><item>ЮВ</item>
+        <item>Ю</item><item>ЮЗ</item><item>З</item><item>СЗ</item>
+    </string-array>
+    <string name="u_kmh">км/ч</string>
+    <string name="u_ms">м/с</string>
+    <string name="u_mph">миль/ч</string>
+    <string name="u_hpa">гПа</string>
+    <string name="u_mmhg">мм рт. ст.</string>
+    <string name="u_inhg">inHg</string>
+    <string name="u_km">км</string>
+    <string name="u_mi">миль</string>
+    <string name="u_mm">мм</string>
+    <string name="u_in">дюйм</string>
+    <string name="places">Места</string>
+    <string name="search_hint">Поиск города…</string>
+    <string name="my_loc">Моё местоположение</string>
+    <string name="remove_hint">Удерживайте сохранённое место, чтобы удалить</string>
+    <string name="no_results">Ничего не найдено</string>
+    <string name="err_net">Нет связи</string>
+    <string name="err_loc">Не удалось определить местоположение</string>
+    <string name="units_title">Единицы измерения</string>
+    <string name="updated">Обновлено %1$s</string>
+    <string name="attribution">Данные погоды: Open-Meteo.com</string>
+    <string name="c_clear">Ясно</string>
+    <string name="c_mostly_clear">Преимущественно ясно</string>
+    <string name="c_partly">Переменная облачность</string>
+    <string name="c_overcast">Пасмурно</string>
+    <string name="c_fog">Туман</string>
+    <string name="c_drizzle">Морось</string>
+    <string name="c_fdrizzle">Ледяная морось</string>
+    <string name="c_lrain">Небольшой дождь</string>
+    <string name="c_rain">Дождь</string>
+    <string name="c_hrain">Сильный дождь</string>
+    <string name="c_frain">Ледяной дождь</string>
+    <string name="c_lsnow">Небольшой снег</string>
+    <string name="c_snow">Снег</string>
+    <string name="c_hsnow">Сильный снег</string>
+    <string name="c_grains">Снежные зёрна</string>
+    <string name="c_showers">Кратковременный дождь</string>
+    <string name="c_hshowers">Ливень</string>
+    <string name="c_snowshowers">Снегопад</string>
+    <string name="c_thunder">Гроза</string>
+    <string name="c_thunder_hail">Гроза с градом</string>
+</resources>

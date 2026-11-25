@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="now">Зараз</string>
+    <string name="today">Сьогодні</string>
+    <string name="feels">Відчувається як %1$s</string>
+    <string name="hi_lo">Макс: %1$s  Мін: %2$s</string>
+    <string name="hourly">Погодинний прогноз</string>
+    <string name="daily">Прогноз на 10 днів</string>
+    <string name="nowcast">Опади, найближчі 2 години</string>
+    <string name="rain_none">Опадів не очікується</string>
+    <string name="rain_start">Опади почнуться через %1$d хв</string>
+    <string name="rain_stop">Опади закінчаться через %1$d хв</string>
+    <string name="rain_long">Опади триватимуть понад 2 години</string>
+    <string name="air">Якість повітря</string>
+    <string name="aqi_line">EU AQI · US AQI %1$d</string>
+    <string name="aq0">Добра</string>
+    <string name="aq1">Прийнятна</string>
+    <string name="aq2">Помірна</string>
+    <string name="aq3">Погана</string>
+    <string name="aq4">Дуже погана</string>
+    <string name="aq5">Небезпечна</string>
+    <string name="pollen">Пилок</string>
+    <string name="pl_alder">Вільха</string>
+    <string name="pl_birch">Береза</string>
+    <string name="pl_grass">Злаки</string>
+    <string name="pl_mugwort">Полин</string>
+    <string name="pl_olive">Олива</string>
+    <string name="pl_ragweed">Амброзія</string>
+    <string name="pollen_unit">зерен/м³</string>
+    <string name="t_wind">Вітер</string>
+    <string name="t_hum">Вологість</string>
+    <string name="t_press">Тиск</string>
+    <string name="t_uv">УФ-індекс</string>
+    <string name="t_vis">Видимість</string>
+    <string name="t_cloud">Хмарність</string>
+    <string name="t_precip">Опади</string>
+    <string name="t_day">Світловий день</string>
+    <string name="gusts">Пориви %1$s</string>
+    <string name="dew">Точка роси %1$s</string>
+    <string name="chance">Імовірність %1$d%%</string>
+    <string name="today_sum">Сьогодні</string>
+    <string name="sunset_at">Захід %1$s</string>
+    <string name="hm">%1$d год %2$d хв</string>
+    <string name="lv0">Низький</string>
+    <string name="lv1">Помірний</string>
+    <string name="lv2">Високий</string>
+    <string name="lv3">Дуже високий</string>
+    <string name="lv4">Екстремальний</string>
+    <string name="sun_moon">Сонце і Місяць</string>
+    <string name="sunrise">Схід</string>
+    <string name="sunset">Захід</string>
+    <string name="moon_ill">Освітленість %1$d%%</string>
+    <string-array name="moon_phases">
+        <item>Новий місяць</item>
+        <item>Молодий серп</item>
+        <item>Перша чверть</item>
+        <item>Зростаючий Місяць</item>
+        <item>Повня</item>
+        <item>Спадаючий Місяць</item>
+        <item>Остання чверть</item>
+        <item>Старий серп</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>Пн</item><item>Пн-Сх</item><item>Сх</item><item>Пд-Сх</item>
+        <item>Пд</item><item>Пд-Зх</item><item>Зх</item><item>Пн-Зх</item>
+    </string-array>
+    <string name="u_kmh">км/год</string>
+    <string name="u_ms">м/с</string>
+    <string name="u_mph">миль/год</string>
+    <string name="u_hpa">гПа</string>
+    <string name="u_mmhg">мм рт. ст.</string>
+    <string name="u_inhg">inHg</string>
+    <string name="u_km">км</string>
+    <string name="u_mi">миль</string>
+    <string name="u_mm">мм</string>
+    <string name="u_in">дюйм</string>
+    <string name="places">Місця</string>
+    <string name="search_hint">Пошук міста…</string>
+    <string name="my_loc">Моя локація</string>
+    <string name="remove_hint">Утримуйте збережене місце, щоб видалити</string>
+    <string name="no_results">Нічого не знайдено</string>
+    <string name="err_net">Немає зв\'язку</string>
+    <string name="err_loc">Не вдалося визначити місцезнаходження</string>
+    <string name="units_title">Одиниці виміру</string>
+    <string name="updated">Оновлено %1$s</string>
+    <string name="attribution">Дані погоди: Open-Meteo.com</string>
+    <string name="c_clear">Ясно</string>
+    <string name="c_mostly_clear">Переважно ясно</string>
+    <string name="c_partly">Мінлива хмарність</string>
+    <string name="c_overcast">Хмарно</string>
+    <string name="c_fog">Туман</string>
+    <string name="c_drizzle">Мряка</string>
+    <string name="c_fdrizzle">Крижана мряка</string>
+    <string name="c_lrain">Невеликий дощ</string>
+    <string name="c_rain">Дощ</string>
+    <string name="c_hrain">Сильний дощ</string>
+    <string name="c_frain">Крижаний дощ</string>
+    <string name="c_lsnow">Невеликий сніг</string>
+    <string name="c_snow">Сніг</string>
+    <string name="c_hsnow">Сильний сніг</string>
+    <string name="c_grains">Снігові зерна</string>
+    <string name="c_showers">Короткочасний дощ</string>
+    <string name="c_hshowers">Злива</string>
+    <string name="c_snowshowers">Снігопад</string>
+    <string name="c_thunder">Гроза</string>
+    <string name="c_thunder_hail">Гроза з градом</string>
+</resources>
