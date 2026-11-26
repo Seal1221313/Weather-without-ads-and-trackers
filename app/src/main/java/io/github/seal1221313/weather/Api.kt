@@ -9,12 +9,14 @@ import java.util.Locale
 
 object Api {
     private fun get(url: String): String {
+        if (!url.startsWith("https://")) throw IOException("https only")
         val c = URL(url).openConnection() as HttpURLConnection
         c.connectTimeout = 12000
         c.readTimeout = 15000
         c.setRequestProperty("User-Agent", "WeatherApp/1.0 (Android)")
         try {
             if (c.responseCode != 200) throw IOException("HTTP " + c.responseCode)
+            if (c.url.protocol != "https") throw IOException("https only")
             return c.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() }
         } finally {
             c.disconnect()
@@ -55,5 +57,24 @@ object Api {
             out.add(Place(o.getString("name"), sub, o.getDouble("latitude"), o.getDouble("longitude")))
         }
         return out
+    }
+
+    const val REPO = "Seal1221313/Weather-without-ads-and-trackers"
+
+    class Update(val tag: String, val num: Int, val url: String)
+
+    fun latestRelease(): Update? {
+        val j = JSONObject(get("https://api.github.com/repos/$REPO/releases/latest"))
+        val tag = j.optString("tag_name", "")
+        val num = tag.substringAfterLast('.').toIntOrNull() ?: return null
+        val assets = j.optJSONArray("assets") ?: return null
+        for (i in 0 until assets.length()) {
+            val a = assets.getJSONObject(i)
+            val u = a.optString("browser_download_url", "")
+            if (a.optString("name", "").endsWith(".apk") && u.startsWith("https://github.com/$REPO/releases/download/")) {
+                return Update(tag, num, u)
+            }
+        }
+        return null
     }
 }

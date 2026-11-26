@@ -105,4 +105,8 @@
     <string name="c_snowshowers">Снігопад</string>
     <string name="c_thunder">Гроза</string>
     <string name="c_thunder_hail">Гроза з градом</string>
+    <string name="upd_title">Доступне оновлення</string>
+    <string name="upd_msg">Доступна версія %1$s (встановлена: %2$s). Завантажити зараз?</string>
+    <string name="upd_btn">Оновити</string>
+    <string name="upd_later">Пізніше</string>
 </resources>

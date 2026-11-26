@@ -6,6 +6,7 @@ import android.animation.ValueAnimator
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.graphics.Color
@@ -15,6 +16,7 @@ import android.location.Geocoder
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -147,6 +149,37 @@ class MainActivity : Activity() {
         }
         lastLoad = prefs.getLong("ct", 0L)
         render()
+        checkUpdate()
+    }
+
+    private fun checkUpdate() {
+        Thread {
+            try {
+                val u = Api.latestRelease()
+                val pi = packageManager.getPackageInfo(packageName, 0)
+                @Suppress("DEPRECATION")
+                val cur = pi.versionCode
+                if (u != null && u.num > cur) {
+                    val curName = pi.versionName ?: cur.toString()
+                    ui.post { if (!isFinishing) showUpdate(u, curName) }
+                }
+            } catch (e: Exception) {
+            }
+        }.start()
+    }
+
+    private fun showUpdate(u: Api.Update, curName: String) {
+        AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
+            .setTitle(R.string.upd_title)
+            .setMessage(getString(R.string.upd_msg, u.tag.removePrefix("v"), curName))
+            .setPositiveButton(R.string.upd_btn) { _, _ ->
+                try {
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(u.url)))
+                } catch (e: Exception) {
+                }
+            }
+            .setNegativeButton(R.string.upd_later, null)
+            .show()
     }
 
     override fun onResume() {

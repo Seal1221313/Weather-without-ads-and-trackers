@@ -105,4 +105,8 @@
     <string name="c_snowshowers">Snow showers</string>
     <string name="c_thunder">Thunderstorm</string>
     <string name="c_thunder_hail">Thunderstorm with hail</string>
+    <string name="upd_title">Update available</string>
+    <string name="upd_msg">Version %1$s is available (installed: %2$s). Download it now?</string>
+    <string name="upd_btn">Update</string>
+    <string name="upd_later">Later</string>
 </resources>
