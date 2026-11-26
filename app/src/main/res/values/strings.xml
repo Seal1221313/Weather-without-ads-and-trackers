@@ -109,4 +109,8 @@
     <string name="upd_msg">Version %1$s is available (installed: %2$s). Download it now?</string>
     <string name="upd_btn">Update</string>
     <string name="upd_later">Later</string>
+    <string name="upd_downloading">Downloading update… %1$d%%</string>
+    <string name="upd_hint">Tap “Update” in the window that appears</string>
+    <string name="upd_allow">Allow installing from this app, then come back — the update will continue</string>
+    <string name="upd_failed">Update failed. Please try again later</string>
 </resources>

@@ -21,6 +21,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -38,6 +39,7 @@ import android.widget.FrameLayout
 import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.ListView
+import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
@@ -168,15 +170,69 @@ class MainActivity : Activity() {
         }.start()
     }
 
+    private var pendingUpd: Api.Update? = null
+
+    private fun canInstall(): Boolean = Build.VERSION.SDK_INT < 26 || packageManager.canRequestPackageInstalls()
+
+    private fun startUpdate(u: Api.Update) {
+        if (!canInstall()) {
+            pendingUpd = u
+            Toast.makeText(this, R.string.upd_allow, Toast.LENGTH_LONG).show()
+            try {
+                startActivity(Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:" + packageName)))
+            } catch (e: Exception) {
+                pendingUpd = null
+            }
+            return
+        }
+        downloadUpdate(u)
+    }
+
+    private fun downloadUpdate(u: Api.Update) {
+        val box = LinearLayout(this)
+        box.orientation = LinearLayout.VERTICAL
+        box.setPadding(di(24f), di(16f), di(24f), di(8f))
+        val msg = tv(16f)
+        msg.text = getString(R.string.upd_downloading, 0)
+        box.addView(msg, lp(MATCH, WRAP))
+        val bar = ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal)
+        bar.max = 100
+        val bl = lp(MATCH, WRAP)
+        bl.topMargin = di(12f)
+        box.addView(bar, bl)
+        val dlg = AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
+            .setTitle(R.string.upd_title)
+            .setView(box)
+            .setCancelable(false)
+            .create()
+        dlg.show()
+        Thread {
+            try {
+                Updater.install(this, u.url) { pct ->
+                    ui.post {
+                        bar.progress = pct
+                        msg.text = getString(R.string.upd_downloading, pct)
+                    }
+                }
+                ui.post {
+                    dlg.dismiss()
+                    Toast.makeText(this, R.string.upd_hint, Toast.LENGTH_LONG).show()
+                }
+            } catch (e: Exception) {
+                ui.post {
+                    dlg.dismiss()
+                    Toast.makeText(this, R.string.upd_failed, Toast.LENGTH_LONG).show()
+                }
+            }
+        }.start()
+    }
+
     private fun showUpdate(u: Api.Update, curName: String) {
         AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
             .setTitle(R.string.upd_title)
             .setMessage(getString(R.string.upd_msg, u.tag.removePrefix("v"), curName))
             .setPositiveButton(R.string.upd_btn) { _, _ ->
-                try {
-                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(u.url)))
-                } catch (e: Exception) {
-                }
+                startUpdate(u)
             }
             .setNegativeButton(R.string.upd_later, null)
             .show()
@@ -184,6 +240,11 @@ class MainActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        val pu = pendingUpd
+        if (pu != null) {
+            pendingUpd = null
+            if (canInstall()) downloadUpdate(pu)
+        }
         val p = place
         if (p == null) {
             if (!asked) {

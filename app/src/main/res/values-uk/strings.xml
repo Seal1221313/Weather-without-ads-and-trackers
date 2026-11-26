@@ -109,4 +109,8 @@
     <string name="upd_msg">Доступна версія %1$s (встановлена: %2$s). Завантажити зараз?</string>
     <string name="upd_btn">Оновити</string>
     <string name="upd_later">Пізніше</string>
+    <string name="upd_downloading">Завантаження оновлення… %1$d%%</string>
+    <string name="upd_hint">Натисніть «Оновити» у вікні, що з’явиться</string>
+    <string name="upd_allow">Дозвольте встановлення з цього додатка й поверніться — оновлення продовжиться</string>
+    <string name="upd_failed">Не вдалося оновити. Спробуйте пізніше</string>
 </resources>
