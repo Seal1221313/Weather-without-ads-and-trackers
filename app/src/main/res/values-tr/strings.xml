@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hava Durumu</string>
+    <string name="now">Şimdi</string>
+    <string name="today">Bugün</string>
+    <string name="feels">Hissedilen %1$s</string>
+    <string name="hi_lo">Maks: %1$s  Min: %2$s</string>
+    <string name="hourly">Saatlik tahmin</string>
+    <string name="daily">10 günlük tahmin</string>
+    <string name="nowcast">Yağış, sonraki 2 saat</string>
+    <string name="rain_none">Yağış beklenmiyor</string>
+    <string name="rain_start">Yağış %1$d dk içinde başlayacak</string>
+    <string name="rain_stop">Yağış %1$d dk içinde sona erecek</string>
+    <string name="rain_long">Yağış 2 saatten uzun sürecek</string>
+    <string name="air">Hava kalitesi</string>
+    <string name="aq0">İyi</string>
+    <string name="aq1">Makul</string>
+    <string name="aq2">Orta</string>
+    <string name="aq3">Kötü</string>
+    <string name="aq4">Çok kötü</string>
+    <string name="aq5">Aşırı kötü</string>
+    <string name="pollen">Polen</string>
+    <string name="pl_alder">Kızılağaç</string>
+    <string name="pl_birch">Huş</string>
+    <string name="pl_grass">Çim</string>
+    <string name="pl_mugwort">Pelin</string>
+    <string name="pl_olive">Zeytin</string>
+    <string name="pl_ragweed">Ambrozya</string>
+    <string name="pollen_unit">tane/m³</string>
+    <string name="t_wind">Rüzgâr</string>
+    <string name="t_hum">Nem</string>
+    <string name="t_press">Basınç</string>
+    <string name="t_uv">UV indeksi</string>
+    <string name="t_vis">Görüş mesafesi</string>
+    <string name="t_cloud">Bulutluluk</string>
+    <string name="t_precip">Yağış</string>
+    <string name="t_day">Gün ışığı</string>
+    <string name="gusts">Hamleler %1$s</string>
+    <string name="dew">Çiy noktası %1$s</string>
+    <string name="chance">Olasılık %1$d%%</string>
+    <string name="sunset_at">Gün batımı %1$s</string>
+    <string name="hm">%1$d sa %2$d dk</string>
+    <string name="lv0">Düşük</string>
+    <string name="lv1">Orta</string>
+    <string name="lv2">Yüksek</string>
+    <string name="lv3">Çok yüksek</string>
+    <string name="lv4">Aşırı</string>
+    <string name="sun_moon">Güneş ve Ay</string>
+    <string name="sunrise">Gün doğumu</string>
+    <string name="sunset">Gün batımı</string>
+    <string name="moon_ill">Aydınlık %1$d%%</string>
+    <string name="u_kmh">km/sa</string>
+    <string name="u_ms">m/sn</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="places">Yerler</string>
+    <string name="search_hint">Şehir ara…</string>
+    <string name="my_loc">Konumum</string>
+    <string name="remove_hint">Kayıtlı yeri silmek için uzun basın</string>
+    <string name="no_results">Sonuç bulunamadı</string>
+    <string name="err_net">Bağlantı yok</string>
+    <string name="err_loc">Konum alınamadı</string>
+    <string name="units_title">Birimler</string>
+    <string name="updated">Güncellendi %1$s</string>
+    <string name="attribution">Hava durumu verileri: Open-Meteo.com</string>
+    <string name="c_clear">Açık</string>
+    <string name="c_mostly_clear">Çoğunlukla açık</string>
+    <string name="c_partly">Parçalı bulutlu</string>
+    <string name="c_overcast">Kapalı</string>
+    <string name="c_fog">Sis</string>
+    <string name="c_drizzle">Çisenti</string>
+    <string name="c_fdrizzle">Donan çisenti</string>
+    <string name="c_lrain">Hafif yağmur</string>
+    <string name="c_rain">Yağmur</string>
+    <string name="c_hrain">Şiddetli yağmur</string>
+    <string name="c_frain">Donan yağmur</string>
+    <string name="c_lsnow">Hafif kar</string>
+    <string name="c_snow">Kar</string>
+    <string name="c_hsnow">Yoğun kar</string>
+    <string name="c_grains">Kar taneleri</string>
+    <string name="c_showers">Sağanak</string>
+    <string name="c_hshowers">Şiddetli sağanak</string>
+    <string name="c_snowshowers">Kar sağanağı</string>
+    <string name="c_thunder">Gök gürültülü fırtına</string>
+    <string name="c_thunder_hail">Dolulu fırtına</string>
+    <string name="upd_title">Güncelleme mevcut</string>
+    <string name="upd_msg">%1$s sürümü mevcut (yüklü: %2$s). Şimdi indirilsin mi?</string>
+    <string name="upd_btn">Güncelle</string>
+    <string name="upd_later">Sonra</string>
+    <string name="upd_downloading">Güncelleme indiriliyor… %1$d%%</string>
+    <string name="upd_hint">Açılan pencerede “Güncelle”ye dokunun</string>
+    <string name="upd_allow">Bu uygulamadan yüklemeye izin verin ve geri dönün; güncelleme devam edecek</string>
+    <string name="upd_failed">Güncelleme başarısız. Lütfen sonra tekrar deneyin</string>
+    <string-array name="moon_phases">
+        <item>Yeni ay</item>
+        <item>Büyüyen hilal</item>
+        <item>İlk dördün</item>
+        <item>Büyüyen şişkin ay</item>
+        <item>Dolunay</item>
+        <item>Küçülen şişkin ay</item>
+        <item>Son dördün</item>
+        <item>Küçülen hilal</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>K</item>
+        <item>KD</item>
+        <item>D</item>
+        <item>GD</item>
+        <item>G</item>
+        <item>GB</item>
+        <item>B</item>
+        <item>KB</item>
+    </string-array>
+</resources>

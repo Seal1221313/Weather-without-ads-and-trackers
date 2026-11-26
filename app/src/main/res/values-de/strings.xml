@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wetter</string>
+    <string name="now">Jetzt</string>
+    <string name="today">Heute</string>
+    <string name="feels">Gefühlt %1$s</string>
+    <string name="hi_lo">Max: %1$s  Min: %2$s</string>
+    <string name="hourly">Stündliche Vorhersage</string>
+    <string name="daily">10-Tage-Vorhersage</string>
+    <string name="nowcast">Niederschlag, nächste 2 Stunden</string>
+    <string name="rain_none">Kein Niederschlag erwartet</string>
+    <string name="rain_start">Niederschlag beginnt in %1$d Min.</string>
+    <string name="rain_stop">Niederschlag endet in %1$d Min.</string>
+    <string name="rain_long">Niederschlag hält über 2 Stunden an</string>
+    <string name="air">Luftqualität</string>
+    <string name="aq0">Gut</string>
+    <string name="aq1">Mäßig</string>
+    <string name="aq2">Befriedigend</string>
+    <string name="aq3">Schlecht</string>
+    <string name="aq4">Sehr schlecht</string>
+    <string name="aq5">Extrem schlecht</string>
+    <string name="pollen">Pollen</string>
+    <string name="pl_alder">Erle</string>
+    <string name="pl_birch">Birke</string>
+    <string name="pl_grass">Gräser</string>
+    <string name="pl_mugwort">Beifuß</string>
+    <string name="pl_olive">Olive</string>
+    <string name="pl_ragweed">Ambrosia</string>
+    <string name="pollen_unit">Pollen/m³</string>
+    <string name="t_wind">Wind</string>
+    <string name="t_hum">Luftfeuchtigkeit</string>
+    <string name="t_press">Luftdruck</string>
+    <string name="t_uv">UV-Index</string>
+    <string name="t_vis">Sichtweite</string>
+    <string name="t_cloud">Bewölkung</string>
+    <string name="t_precip">Niederschlag</string>
+    <string name="t_day">Tageslicht</string>
+    <string name="gusts">Böen %1$s</string>
+    <string name="dew">Taupunkt %1$s</string>
+    <string name="chance">Wahrscheinlichkeit %1$d%%</string>
+    <string name="sunset_at">Sonnenuntergang %1$s</string>
+    <string name="hm">%1$d Std. %2$d Min.</string>
+    <string name="lv0">Niedrig</string>
+    <string name="lv1">Mäßig</string>
+    <string name="lv2">Hoch</string>
+    <string name="lv3">Sehr hoch</string>
+    <string name="lv4">Extrem</string>
+    <string name="sun_moon">Sonne und Mond</string>
+    <string name="sunrise">Sonnenaufgang</string>
+    <string name="sunset">Sonnenuntergang</string>
+    <string name="moon_ill">Beleuchtung %1$d%%</string>
+    <string name="u_kmh">km/h</string>
+    <string name="u_ms">m/s</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="places">Orte</string>
+    <string name="search_hint">Stadt suchen…</string>
+    <string name="my_loc">Mein Standort</string>
+    <string name="remove_hint">Gespeicherten Ort lange drücken, um ihn zu entfernen</string>
+    <string name="no_results">Nichts gefunden</string>
+    <string name="err_net">Keine Verbindung</string>
+    <string name="err_loc">Standort konnte nicht ermittelt werden</string>
+    <string name="units_title">Einheiten</string>
+    <string name="updated">Aktualisiert %1$s</string>
+    <string name="attribution">Wetterdaten: Open-Meteo.com</string>
+    <string name="c_clear">Klar</string>
+    <string name="c_mostly_clear">Überwiegend klar</string>
+    <string name="c_partly">Teilweise bewölkt</string>
+    <string name="c_overcast">Bedeckt</string>
+    <string name="c_fog">Nebel</string>
+    <string name="c_drizzle">Nieselregen</string>
+    <string name="c_fdrizzle">Gefrierender Nieselregen</string>
+    <string name="c_lrain">Leichter Regen</string>
+    <string name="c_rain">Regen</string>
+    <string name="c_hrain">Starker Regen</string>
+    <string name="c_frain">Gefrierender Regen</string>
+    <string name="c_lsnow">Leichter Schneefall</string>
+    <string name="c_snow">Schneefall</string>
+    <string name="c_hsnow">Starker Schneefall</string>
+    <string name="c_grains">Schneegriesel</string>
+    <string name="c_showers">Regenschauer</string>
+    <string name="c_hshowers">Starke Schauer</string>
+    <string name="c_snowshowers">Schneeschauer</string>
+    <string name="c_thunder">Gewitter</string>
+    <string name="c_thunder_hail">Gewitter mit Hagel</string>
+    <string name="upd_title">Update verfügbar</string>
+    <string name="upd_msg">Version %1$s ist verfügbar (installiert: %2$s). Jetzt herunterladen?</string>
+    <string name="upd_btn">Aktualisieren</string>
+    <string name="upd_later">Später</string>
+    <string name="upd_downloading">Update wird heruntergeladen… %1$d%%</string>
+    <string name="upd_hint">Tippe im erscheinenden Fenster auf „Aktualisieren“</string>
+    <string name="upd_allow">Erlaube die Installation aus dieser App und kehre zurück – das Update wird fortgesetzt</string>
+    <string name="upd_failed">Update fehlgeschlagen. Bitte später erneut versuchen</string>
+    <string-array name="moon_phases">
+        <item>Neumond</item>
+        <item>Zunehmende Sichel</item>
+        <item>Erstes Viertel</item>
+        <item>Zunehmender Mond</item>
+        <item>Vollmond</item>
+        <item>Abnehmender Mond</item>
+        <item>Letztes Viertel</item>
+        <item>Abnehmende Sichel</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>N</item>
+        <item>NO</item>
+        <item>O</item>
+        <item>SO</item>
+        <item>S</item>
+        <item>SW</item>
+        <item>W</item>
+        <item>NW</item>
+    </string-array>
+</resources>

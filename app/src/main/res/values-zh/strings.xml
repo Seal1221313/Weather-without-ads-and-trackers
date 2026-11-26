@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">天气</string>
+    <string name="now">现在</string>
+    <string name="today">今天</string>
+    <string name="feels">体感 %1$s</string>
+    <string name="hi_lo">最高：%1$s  最低：%2$s</string>
+    <string name="hourly">逐小时预报</string>
+    <string name="daily">10 天预报</string>
+    <string name="nowcast">降水，未来 2 小时</string>
+    <string name="rain_none">预计无降水</string>
+    <string name="rain_start">降水将在 %1$d 分钟后开始</string>
+    <string name="rain_stop">降水将在 %1$d 分钟后结束</string>
+    <string name="rain_long">降水将持续 2 小时以上</string>
+    <string name="air">空气质量</string>
+    <string name="aq0">良好</string>
+    <string name="aq1">一般</string>
+    <string name="aq2">中等</string>
+    <string name="aq3">较差</string>
+    <string name="aq4">很差</string>
+    <string name="aq5">极差</string>
+    <string name="pollen">花粉</string>
+    <string name="pl_alder">桤木</string>
+    <string name="pl_birch">桦树</string>
+    <string name="pl_grass">禾草</string>
+    <string name="pl_mugwort">艾蒿</string>
+    <string name="pl_olive">橄榄</string>
+    <string name="pl_ragweed">豚草</string>
+    <string name="pollen_unit">粒/m³</string>
+    <string name="t_wind">风</string>
+    <string name="t_hum">湿度</string>
+    <string name="t_press">气压</string>
+    <string name="t_uv">紫外线指数</string>
+    <string name="t_vis">能见度</string>
+    <string name="t_cloud">云量</string>
+    <string name="t_precip">降水</string>
+    <string name="t_day">日照时长</string>
+    <string name="gusts">阵风 %1$s</string>
+    <string name="dew">露点 %1$s</string>
+    <string name="chance">概率 %1$d%%</string>
+    <string name="sunset_at">日落 %1$s</string>
+    <string name="hm">%1$d 小时 %2$d 分钟</string>
+    <string name="lv0">低</string>
+    <string name="lv1">中等</string>
+    <string name="lv2">高</string>
+    <string name="lv3">很高</string>
+    <string name="lv4">极高</string>
+    <string name="sun_moon">日月</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="moon_ill">照亮 %1$d%%</string>
+    <string name="u_kmh">km/h</string>
+    <string name="u_ms">m/s</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="places">地点</string>
+    <string name="search_hint">搜索城市…</string>
+    <string name="my_loc">我的位置</string>
+    <string name="remove_hint">长按已保存的地点即可删除</string>
+    <string name="no_results">未找到结果</string>
+    <string name="err_net">无网络连接</string>
+    <string name="err_loc">无法获取位置</string>
+    <string name="units_title">单位</string>
+    <string name="updated">更新于 %1$s</string>
+    <string name="attribution">天气数据：Open-Meteo.com</string>
+    <string name="c_clear">晴</string>
+    <string name="c_mostly_clear">大部晴朗</string>
+    <string name="c_partly">局部多云</string>
+    <string name="c_overcast">阴</string>
+    <string name="c_fog">雾</string>
+    <string name="c_drizzle">毛毛雨</string>
+    <string name="c_fdrizzle">冻毛毛雨</string>
+    <string name="c_lrain">小雨</string>
+    <string name="c_rain">雨</string>
+    <string name="c_hrain">大雨</string>
+    <string name="c_frain">冻雨</string>
+    <string name="c_lsnow">小雪</string>
+    <string name="c_snow">雪</string>
+    <string name="c_hsnow">大雪</string>
+    <string name="c_grains">米雪</string>
+    <string name="c_showers">阵雨</string>
+    <string name="c_hshowers">强阵雨</string>
+    <string name="c_snowshowers">阵雪</string>
+    <string name="c_thunder">雷暴</string>
+    <string name="c_thunder_hail">雷暴伴冰雹</string>
+    <string name="upd_title">有可用更新</string>
+    <string name="upd_msg">新版本 %1$s 可用（当前：%2$s）。现在下载吗？</string>
+    <string name="upd_btn">更新</string>
+    <string name="upd_later">稍后</string>
+    <string name="upd_downloading">正在下载更新… %1$d%%</string>
+    <string name="upd_hint">请在弹出的窗口中点按“更新”</string>
+    <string name="upd_allow">请允许从本应用安装，然后返回，更新将继续</string>
+    <string name="upd_failed">更新失败，请稍后重试</string>
+    <string-array name="moon_phases">
+        <item>新月</item>
+        <item>蛾眉月</item>
+        <item>上弦月</item>
+        <item>盈凸月</item>
+        <item>满月</item>
+        <item>亏凸月</item>
+        <item>下弦月</item>
+        <item>残月</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>北</item>
+        <item>东北</item>
+        <item>东</item>
+        <item>东南</item>
+        <item>南</item>
+        <item>西南</item>
+        <item>西</item>
+        <item>西北</item>
+    </string-array>
+</resources>

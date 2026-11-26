@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tiempo</string>
+    <string name="now">Ahora</string>
+    <string name="today">Hoy</string>
+    <string name="feels">Sensación %1$s</string>
+    <string name="hi_lo">Máx: %1$s  Mín: %2$s</string>
+    <string name="hourly">Pronóstico por horas</string>
+    <string name="daily">Pronóstico a 10 días</string>
+    <string name="nowcast">Precipitaciones, próximas 2 horas</string>
+    <string name="rain_none">No se esperan precipitaciones</string>
+    <string name="rain_start">Las precipitaciones empiezan en %1$d min</string>
+    <string name="rain_stop">Las precipitaciones terminan en %1$d min</string>
+    <string name="rain_long">Precipitaciones durante más de 2 horas</string>
+    <string name="air">Calidad del aire</string>
+    <string name="aq0">Buena</string>
+    <string name="aq1">Razonable</string>
+    <string name="aq2">Moderada</string>
+    <string name="aq3">Mala</string>
+    <string name="aq4">Muy mala</string>
+    <string name="aq5">Extremadamente mala</string>
+    <string name="pollen">Polen</string>
+    <string name="pl_alder">Aliso</string>
+    <string name="pl_birch">Abedul</string>
+    <string name="pl_grass">Gramíneas</string>
+    <string name="pl_mugwort">Artemisa</string>
+    <string name="pl_olive">Olivo</string>
+    <string name="pl_ragweed">Ambrosía</string>
+    <string name="pollen_unit">granos/m³</string>
+    <string name="t_wind">Viento</string>
+    <string name="t_hum">Humedad</string>
+    <string name="t_press">Presión</string>
+    <string name="t_uv">Índice UV</string>
+    <string name="t_vis">Visibilidad</string>
+    <string name="t_cloud">Nubosidad</string>
+    <string name="t_precip">Precipitación</string>
+    <string name="t_day">Horas de luz</string>
+    <string name="gusts">Ráfagas %1$s</string>
+    <string name="dew">Punto de rocío %1$s</string>
+    <string name="chance">Probabilidad %1$d%%</string>
+    <string name="sunset_at">Puesta de sol %1$s</string>
+    <string name="hm">%1$d h %2$d min</string>
+    <string name="lv0">Bajo</string>
+    <string name="lv1">Moderado</string>
+    <string name="lv2">Alto</string>
+    <string name="lv3">Muy alto</string>
+    <string name="lv4">Extremo</string>
+    <string name="sun_moon">Sol y Luna</string>
+    <string name="sunrise">Amanecer</string>
+    <string name="sunset">Atardecer</string>
+    <string name="moon_ill">Iluminación %1$d%%</string>
+    <string name="u_kmh">km/h</string>
+    <string name="u_ms">m/s</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="places">Lugares</string>
+    <string name="search_hint">Buscar ciudad…</string>
+    <string name="my_loc">Mi ubicación</string>
+    <string name="remove_hint">Mantén pulsado un lugar guardado para eliminarlo</string>
+    <string name="no_results">Sin resultados</string>
+    <string name="err_net">Sin conexión</string>
+    <string name="err_loc">No se pudo obtener la ubicación</string>
+    <string name="units_title">Unidades</string>
+    <string name="updated">Actualizado %1$s</string>
+    <string name="attribution">Datos del tiempo: Open-Meteo.com</string>
+    <string name="c_clear">Despejado</string>
+    <string name="c_mostly_clear">Mayormente despejado</string>
+    <string name="c_partly">Parcialmente nublado</string>
+    <string name="c_overcast">Nublado</string>
+    <string name="c_fog">Niebla</string>
+    <string name="c_drizzle">Llovizna</string>
+    <string name="c_fdrizzle">Llovizna helada</string>
+    <string name="c_lrain">Lluvia ligera</string>
+    <string name="c_rain">Lluvia</string>
+    <string name="c_hrain">Lluvia intensa</string>
+    <string name="c_frain">Lluvia helada</string>
+    <string name="c_lsnow">Nieve ligera</string>
+    <string name="c_snow">Nieve</string>
+    <string name="c_hsnow">Nevada intensa</string>
+    <string name="c_grains">Gránulos de nieve</string>
+    <string name="c_showers">Chubascos</string>
+    <string name="c_hshowers">Chubascos fuertes</string>
+    <string name="c_snowshowers">Chubascos de nieve</string>
+    <string name="c_thunder">Tormenta</string>
+    <string name="c_thunder_hail">Tormenta con granizo</string>
+    <string name="upd_title">Actualización disponible</string>
+    <string name="upd_msg">La versión %1$s está disponible (instalada: %2$s). ¿Descargarla ahora?</string>
+    <string name="upd_btn">Actualizar</string>
+    <string name="upd_later">Más tarde</string>
+    <string name="upd_downloading">Descargando actualización… %1$d%%</string>
+    <string name="upd_hint">Pulsa «Actualizar» en la ventana que aparecerá</string>
+    <string name="upd_allow">Permite instalar desde esta app y vuelve: la actualización continuará</string>
+    <string name="upd_failed">Error al actualizar. Inténtalo más tarde</string>
+    <string-array name="moon_phases">
+        <item>Luna nueva</item>
+        <item>Luna creciente</item>
+        <item>Cuarto creciente</item>
+        <item>Gibosa creciente</item>
+        <item>Luna llena</item>
+        <item>Gibosa menguante</item>
+        <item>Cuarto menguante</item>
+        <item>Luna menguante</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SO</item>
+        <item>O</item>
+        <item>NO</item>
+    </string-array>
+</resources>

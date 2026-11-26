@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Počasí</string>
+    <string name="now">Nyní</string>
+    <string name="today">Dnes</string>
+    <string name="feels">Pocitově %1$s</string>
+    <string name="hi_lo">Max: %1$s  Min: %2$s</string>
+    <string name="hourly">Hodinová předpověď</string>
+    <string name="daily">Předpověď na 10 dní</string>
+    <string name="nowcast">Srážky, příští 2 hodiny</string>
+    <string name="rain_none">Žádné srážky se neočekávají</string>
+    <string name="rain_start">Srážky začnou za %1$d min</string>
+    <string name="rain_stop">Srážky skončí za %1$d min</string>
+    <string name="rain_long">Srážky potrvají déle než 2 hodiny</string>
+    <string name="air">Kvalita ovzduší</string>
+    <string name="aq0">Dobrá</string>
+    <string name="aq1">Přijatelná</string>
+    <string name="aq2">Střední</string>
+    <string name="aq3">Špatná</string>
+    <string name="aq4">Velmi špatná</string>
+    <string name="aq5">Extrémně špatná</string>
+    <string name="pollen">Pyl</string>
+    <string name="pl_alder">Olše</string>
+    <string name="pl_birch">Bříza</string>
+    <string name="pl_grass">Trávy</string>
+    <string name="pl_mugwort">Pelyněk</string>
+    <string name="pl_olive">Olivovník</string>
+    <string name="pl_ragweed">Ambrózie</string>
+    <string name="pollen_unit">zrn/m³</string>
+    <string name="t_wind">Vítr</string>
+    <string name="t_hum">Vlhkost</string>
+    <string name="t_press">Tlak</string>
+    <string name="t_uv">UV index</string>
+    <string name="t_vis">Dohlednost</string>
+    <string name="t_cloud">Oblačnost</string>
+    <string name="t_precip">Srážky</string>
+    <string name="t_day">Délka dne</string>
+    <string name="gusts">Nárazy %1$s</string>
+    <string name="dew">Rosný bod %1$s</string>
+    <string name="chance">Pravděpodobnost %1$d%%</string>
+    <string name="sunset_at">Západ %1$s</string>
+    <string name="hm">%1$d h %2$d min</string>
+    <string name="lv0">Nízký</string>
+    <string name="lv1">Střední</string>
+    <string name="lv2">Vysoký</string>
+    <string name="lv3">Velmi vysoký</string>
+    <string name="lv4">Extrémní</string>
+    <string name="sun_moon">Slunce a Měsíc</string>
+    <string name="sunrise">Východ</string>
+    <string name="sunset">Západ</string>
+    <string name="moon_ill">Osvětlení %1$d%%</string>
+    <string name="u_kmh">km/h</string>
+    <string name="u_ms">m/s</string>
+    <string name="u_km">km</string>
+    <string name="u_mi">mi</string>
+    <string name="u_mm">mm</string>
+    <string name="places">Místa</string>
+    <string name="search_hint">Hledat město…</string>
+    <string name="my_loc">Moje poloha</string>
+    <string name="remove_hint">Dlouhým stisknutím uložené místo odeberete</string>
+    <string name="no_results">Nic nenalezeno</string>
+    <string name="err_net">Bez připojení</string>
+    <string name="err_loc">Polohu se nepodařilo zjistit</string>
+    <string name="units_title">Jednotky</string>
+    <string name="updated">Aktualizováno %1$s</string>
+    <string name="attribution">Data o počasí: Open-Meteo.com</string>
+    <string name="c_clear">Jasno</string>
+    <string name="c_mostly_clear">Převážně jasno</string>
+    <string name="c_partly">Polojasno</string>
+    <string name="c_overcast">Zataženo</string>
+    <string name="c_fog">Mlha</string>
+    <string name="c_drizzle">Mrholení</string>
+    <string name="c_fdrizzle">Namrzající mrholení</string>
+    <string name="c_lrain">Slabý déšť</string>
+    <string name="c_rain">Déšť</string>
+    <string name="c_hrain">Silný déšť</string>
+    <string name="c_frain">Namrzající déšť</string>
+    <string name="c_lsnow">Slabé sněžení</string>
+    <string name="c_snow">Sněžení</string>
+    <string name="c_hsnow">Silné sněžení</string>
+    <string name="c_grains">Sněhová zrna</string>
+    <string name="c_showers">Přeháňky</string>
+    <string name="c_hshowers">Silné přeháňky</string>
+    <string name="c_snowshowers">Sněhové přeháňky</string>
+    <string name="c_thunder">Bouřka</string>
+    <string name="c_thunder_hail">Bouřka s kroupami</string>
+    <string name="upd_title">Dostupná aktualizace</string>
+    <string name="upd_msg">Je dostupná verze %1$s (nainstalována: %2$s). Stáhnout nyní?</string>
+    <string name="upd_btn">Aktualizovat</string>
+    <string name="upd_later">Později</string>
+    <string name="upd_downloading">Stahování aktualizace… %1$d%%</string>
+    <string name="upd_hint">V okně, které se zobrazí, klepněte na „Aktualizovat“</string>
+    <string name="upd_allow">Povolte instalaci z této aplikace a vraťte se – aktualizace bude pokračovat</string>
+    <string name="upd_failed">Aktualizace se nezdařila. Zkuste to později</string>
+    <string-array name="moon_phases">
+        <item>Nov</item>
+        <item>Dorůstající srpek</item>
+        <item>První čtvrť</item>
+        <item>Dorůstající měsíc</item>
+        <item>Úplněk</item>
+        <item>Couvající měsíc</item>
+        <item>Poslední čtvrť</item>
+        <item>Ubývající srpek</item>
+    </string-array>
+    <string-array name="wind_dirs">
+        <item>S</item>
+        <item>SV</item>
+        <item>V</item>
+        <item>JV</item>
+        <item>J</item>
+        <item>JZ</item>
+        <item>Z</item>
+        <item>SZ</item>
+    </string-array>
+</resources>
