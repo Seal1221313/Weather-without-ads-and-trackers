@@ -154,10 +154,22 @@ class MainActivity : Activity() {
         }
         lastLoad = prefs.getLong("ct", 0L)
         render()
-        checkUpdate()
+        checkUpdate(0L, false)
     }
 
-    private fun checkUpdate() {
+    private var lastUpdCheck = 0L
+    private var updDlg: AlertDialog? = null
+
+    private fun verName(): String = try {
+        packageManager.getPackageInfo(packageName, 0).versionName ?: ""
+    } catch (e: Exception) {
+        ""
+    }
+
+    private fun checkUpdate(minGapMs: Long, manual: Boolean) {
+        val now = System.currentTimeMillis()
+        if (!manual && now - lastUpdCheck < minGapMs) return
+        lastUpdCheck = now
         Thread {
             try {
                 val u = Api.latestRelease()
@@ -167,8 +179,11 @@ class MainActivity : Activity() {
                 if (u != null && u.num > cur) {
                     val curName = pi.versionName ?: cur.toString()
                     ui.post { if (!isFinishing) showUpdate(u, curName) }
+                } else if (manual) {
+                    ui.post { Toast.makeText(this, R.string.upd_latest, Toast.LENGTH_SHORT).show() }
                 }
             } catch (e: Exception) {
+                if (manual) ui.post { Toast.makeText(this, R.string.err_net, Toast.LENGTH_SHORT).show() }
             }
         }.start()
     }
@@ -231,18 +246,23 @@ class MainActivity : Activity() {
     }
 
     private fun showUpdate(u: Api.Update, curName: String) {
-        AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
+        val prev = updDlg
+        if (prev != null && prev.isShowing) return
+        val dlg = AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Dialog_Alert)
             .setTitle(R.string.upd_title)
             .setMessage(getString(R.string.upd_msg, u.tag.removePrefix("v"), curName))
             .setPositiveButton(R.string.upd_btn) { _, _ ->
                 startUpdate(u)
             }
             .setNegativeButton(R.string.upd_later, null)
-            .show()
+            .create()
+        updDlg = dlg
+        dlg.show()
     }
 
     override fun onResume() {
         super.onResume()
+        checkUpdate(3 * 60 * 60 * 1000L, false)
         val pu = pendingUpd
         if (pu != null) {
             pendingUpd = null
@@ -571,6 +591,7 @@ class MainActivity : Activity() {
         footTv = tv(12f)
         footTv.alpha = 0.6f
         footTv.gravity = Gravity.CENTER
+        footTv.setOnClickListener { checkUpdate(0L, true) }
         val fl = lp(MATCH, WRAP)
         fl.topMargin = di(18f)
         body.addView(footTv, fl)
@@ -802,7 +823,7 @@ class MainActivity : Activity() {
         moonSub.text = getString(R.string.moon_ill, ill)
 
         val ts = SimpleDateFormat("HH:mm", Locale.getDefault()).format(java.util.Date(if (lastLoad > 0) lastLoad else System.currentTimeMillis()))
-        footTv.text = getString(R.string.attribution) + "\n" + getString(R.string.updated, ts) + "\n" + getString(R.string.credits)
+        footTv.text = getString(R.string.attribution) + "\n" + getString(R.string.updated, ts) + "\n" + getString(R.string.credits) + " · v" + verName()
 
         if (!entered) {
             entered = true

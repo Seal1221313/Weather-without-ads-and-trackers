@@ -112,4 +112,5 @@
         <item>O</item>
         <item>NO</item>
     </string-array>
+    <string name="upd_latest">Hai l’ultima versione</string>
 </resources>

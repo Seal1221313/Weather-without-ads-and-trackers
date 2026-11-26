@@ -113,4 +113,5 @@
     <string name="upd_hint">Нажмите «Обновить» в появившемся окне</string>
     <string name="upd_allow">Разрешите установку из этого приложения и вернитесь — обновление продолжится</string>
     <string name="upd_failed">Не удалось обновить. Попробуйте позже</string>
+    <string name="upd_latest">У вас последняя версия</string>
 </resources>

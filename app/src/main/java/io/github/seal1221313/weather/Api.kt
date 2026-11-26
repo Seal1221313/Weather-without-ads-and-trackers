@@ -66,7 +66,36 @@ object Api {
 
     class Update(val tag: String, val num: Int, val url: String)
 
+    private fun latestTagRedirect(): String? {
+        val c = URL("https://github.com/$REPO/releases/latest").openConnection() as HttpURLConnection
+        c.instanceFollowRedirects = false
+        c.connectTimeout = 12000
+        c.readTimeout = 15000
+        c.setRequestProperty("User-Agent", "WeatherApp/1.0 (Android)")
+        try {
+            val code = c.responseCode
+            if (code < 300 || code > 399) return null
+            val loc = c.getHeaderField("Location") ?: return null
+            val prefix = "https://github.com/$REPO/releases/tag/"
+            if (!loc.startsWith(prefix)) return null
+            return loc.substring(prefix.length)
+        } finally {
+            c.disconnect()
+        }
+    }
+
     fun latestRelease(): Update? {
+        var tag: String? = null
+        try { tag = latestTagRedirect() } catch (e: Exception) { tag = null }
+        val tg = tag
+        if (tg != null) {
+            val num = tg.substringAfterLast('.').toIntOrNull()
+            if (num != null) return Update(tg, num, "https://github.com/$REPO/releases/download/$tg/Weather.apk")
+        }
+        return latestFromApi()
+    }
+
+    private fun latestFromApi(): Update? {
         val j = JSONObject(get("https://api.github.com/repos/$REPO/releases/latest"))
         val tag = j.optString("tag_name", "")
         val num = tag.substringAfterLast('.').toIntOrNull() ?: return null

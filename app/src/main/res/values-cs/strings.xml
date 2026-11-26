@@ -112,4 +112,5 @@
         <item>Z</item>
         <item>SZ</item>
     </string-array>
+    <string name="upd_latest">Máte nejnovější verzi</string>
 </resources>

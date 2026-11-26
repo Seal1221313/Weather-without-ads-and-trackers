@@ -112,4 +112,5 @@
         <item>B</item>
         <item>KB</item>
     </string-array>
+    <string name="upd_latest">En son sürümü kullanıyorsunuz</string>
 </resources>

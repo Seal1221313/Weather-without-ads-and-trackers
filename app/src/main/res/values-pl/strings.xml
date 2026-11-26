@@ -112,4 +112,5 @@
         <item>W</item>
         <item>NW</item>
     </string-array>
+    <string name="upd_latest">Masz najnowszą wersję</string>
 </resources>

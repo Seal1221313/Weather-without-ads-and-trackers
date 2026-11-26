@@ -113,4 +113,5 @@
     <string name="upd_hint">Натисніть «Оновити» у вікні, що з’явиться</string>
     <string name="upd_allow">Дозвольте встановлення з цього додатка й поверніться — оновлення продовжиться</string>
     <string name="upd_failed">Не вдалося оновити. Спробуйте пізніше</string>
+    <string name="upd_latest">У вас остання версія</string>
 </resources>

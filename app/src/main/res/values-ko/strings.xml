@@ -112,4 +112,5 @@
         <item>서</item>
         <item>북서</item>
     </string-array>
+    <string name="upd_latest">최신 버전입니다</string>
 </resources>
