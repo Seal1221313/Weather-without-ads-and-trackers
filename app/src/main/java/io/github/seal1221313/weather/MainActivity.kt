@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (c) 2026 Seal1221313 - see LICENSE and NOTICE
+
 package io.github.seal1221313.weather
 
 import android.Manifest
@@ -799,7 +802,7 @@ class MainActivity : Activity() {
         moonSub.text = getString(R.string.moon_ill, ill)
 
         val ts = SimpleDateFormat("HH:mm", Locale.getDefault()).format(java.util.Date(if (lastLoad > 0) lastLoad else System.currentTimeMillis()))
-        footTv.text = getString(R.string.attribution) + "\n" + getString(R.string.updated, ts)
+        footTv.text = getString(R.string.attribution) + "\n" + getString(R.string.updated, ts) + "\n" + getString(R.string.credits)
 
         if (!entered) {
             entered = true

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (c) 2026 Seal1221313 - see LICENSE and NOTICE
+
 package io.github.seal1221313.weather
 
 import org.json.JSONArray

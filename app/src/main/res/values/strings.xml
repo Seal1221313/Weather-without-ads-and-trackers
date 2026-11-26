@@ -113,4 +113,5 @@
     <string name="upd_hint">Tap “Update” in the window that appears</string>
     <string name="upd_allow">Allow installing from this app, then come back — the update will continue</string>
     <string name="upd_failed">Update failed. Please try again later</string>
+    <string name="credits" translatable="false">© 2026 Seal1221313 · GPL-3.0</string>
 </resources>
